@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<time.h>
 
 
 
@@ -21,7 +22,8 @@ typedef struct
 typedef struct
 {
     int count;
-    char assist[255];
+    int assist_count;
+    char assist[2][255];
     char id[255];
     char prak[255];
     char rom[255];
