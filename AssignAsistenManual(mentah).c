@@ -158,7 +158,7 @@ void assignAsisten(jadwal_t* jadwal)
 			{
 				printf("Asisten sudah penuh\n");
 			}
-		} else
+		}
 	} while ((init!='Q')&&(init!='q'));
 	return();
 }
