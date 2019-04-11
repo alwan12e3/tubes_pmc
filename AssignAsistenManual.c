@@ -222,7 +222,7 @@ void assignAsisten(jadwal_t jadwal[][5])
 					}
 				} else
 				{
-					printf("Jadwal Asisten Praktikum %s tidak sesuai (tidak ada praktikum bersangkutan)\n");
+					printf("Jadwal Asisten Praktikum tidak sesuai (tidak ada praktikum bersangkutan)\n");
 				}
 			} else
 			{
