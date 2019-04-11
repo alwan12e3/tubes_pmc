@@ -233,18 +233,18 @@ void assignAsisten(jadwal_t jadwal[][5])
 	//return;
 }
 
-/* void AssignAsistenManual(jadwal_t jadwal[][5]) //fungsi yang bisa dipanggil oleh main (bener2 main)
+void AssignAsistenManual(jadwal_t jadwal[][5]) //fungsi yang bisa dipanggil oleh main (bener2 main)
 {
 	printf("[Mode Assign Asisten]\n");
 	printf("Isi `q` atau `Q` untuk kembali ke menu\n");
 	assignAsisten(jadwal); 
-} */
+}
 
-int main()
+/*int main()
 {
 	jadwal_t jadwal[12][5]={0};
 	printf("[Mode Assign Asisten]\n");
 	printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
 	assignAsisten(jadwal);
 	return 0;
-}
+}*/
