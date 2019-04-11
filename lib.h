@@ -32,8 +32,15 @@ typedef struct
 typedef struct 
 {
     lab_t lab[4];
-    
 }jadwal_t;
+
+typedef struct
+{
+	char* nama;
+	char* prak[4];
+	char* hari[5];
+} asisten;
+
 enum hari
     {Senin, Selasa, Rabu, Kamis, Jumat};
 
@@ -93,5 +100,22 @@ void input_sch(jadwal_t j[][5], prak_t *p);
 
 void auto_input_sch(jadwal_t j[][5], prak_t *p);
 
+int search(char* array[], char* item, int max_length);
+
+asisten namaAsisten (char initial);
+
+void scanMinggu(int* week);
+
+void scanHari(char* day);
+
+void scanRuang(char* ruang);
+
+int cekBisa(asisten asis, char* item);
+
+int cekAda(asisten asis, int week, char* day, char* lab, jadwal_t jadwal[][5]);
+
+void assignAsisten(jadwal_t jadwal[][5]);
+
+void AssignAsistenManual(jadwal_t jadwal[][5]);
 
 #endif
