@@ -15,7 +15,7 @@ int search(char* array[], char* item, int max_length)
     {
 		if (strcmp(array[i],item)==0)
 		{
-			val = 1;
+			val = 1; //ditemukan
 			break;
 		} else
 		{
@@ -28,7 +28,6 @@ int search(char* array[], char* item, int max_length)
 asisten namaAsisten (char initial)
 {
 	asisten Assist={0};
-	char* nama;
 	if (initial=='A')
 	{
 		Assist.nama = "Amir";
@@ -234,17 +233,16 @@ void assignAsisten(jadwal_t jadwal[][5])
 	//return;
 }
 
-/* void AssignAssistenManual()
+/* void AssignAsistenManual(jadwal_t jadwal[][5]) //fungsi yang bisa dipanggil oleh main (bener2 main)
 {
-	jadwal_t jadwal[12][5] ={0};
-    printf("[Mode Assign Asisten]\n");
+	printf("[Mode Assign Asisten]\n");
 	printf("Isi `q` atau `Q` untuk kembali ke menu\n");
 	assignAsisten(jadwal); 
 } */
 
 int main()
 {
-	jadwal_t jadwal[12][5] ={0};
+	jadwal_t jadwal[12][5]={0};
 	printf("[Mode Assign Asisten]\n");
 	printf("Isi 'q' atau 'Q' untuk kembali ke menu\n");
 	assignAsisten(jadwal);
